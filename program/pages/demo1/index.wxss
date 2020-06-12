@@ -1,0 +1,74 @@
+/* pages/demo1/index.wxss *//* pages/demo1/index.wxss */
+.van-notice-bar{
+  color:green;
+  font-size:14rpx;
+}
+.swiper{
+  padding:15px 18.75px;
+  
+}
+.swiper>image{
+  height:300rpx;
+  width:100%;
+  border-radius: 10px;
+}
+
+.exclusive-one{
+  font-size:12px;
+  color:#6A6A6A;
+  display:flex;
+  padding:3% 4% 2% 4%;
+}
+.exclusive-one-one{
+  margin-right: 30px;
+}
+
+.exclusive-one-one>text{
+  font-size:10px;
+  color: #FFFFFF;
+    text-align: center;
+    background-color: #FF956A;
+    padding: 2px;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    line-height: 1.2;
+    align-items: center;
+    vertical-align: top;
+}
+
+
+.exclusive-one-two>text{
+  font-size:10px;
+  color: #FFFFFF;
+    text-align: center;
+    background-color: #FF956A;
+    padding: 2px;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    line-height: 1.2;
+    align-items: center;
+    vertical-align: top;
+}
+
+/* .exclusive{
+  padding:2px;
+}
+.exclusive-one{
+  display:flex;
+  color:#6A6A6A6A;
+  font-size:12px;
+  padding:3% 4% 2% 4%;
+}
+.exclusive-one-one{
+  margin-right: 30px;
+  line-height: 1.4;
+  font-size: 12px;
+  color: #6A6A6A;
+} */
+
+
+
