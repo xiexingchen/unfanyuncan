@@ -1,10 +1,11 @@
 <view>
-	<!-- closeable 模式，在右侧显示关闭按钮 -->
-	<van-notice-bar mode="closeable" text="【消息】: 我校第一餐厅将于6月3号正式营业。" color="#ff794A" />
-</view>
-<view class="swiper">
-	<image src="{{background}}"></image>
-	<!-- <view class="page-section page-section-spacing swiper">
+	<view>
+		<!-- closeable 模式，在右侧显示关闭按钮 -->
+		<van-notice-bar mode="closeable" text="【消息】: 我校第一餐厅将于6月3号正式营业。" color="#ff794A" />
+	</view>
+	<view class="swiper">
+		<image src="{{background}}"></image>
+		<!-- <view class="page-section page-section-spacing swiper">
 		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
 			<block wx:for="{{background}}" wx:key="*this">
 				<swiper-item>
@@ -13,27 +14,37 @@
 			</block>
 		</swiper>
 	</view> -->
-</view>
-<view class="exclusive">
-	<view class="exclusive-one">
-		<view class="exclusive-one-one">
-			<text class="text1">官</text>
-			官方授权
-		</view>
-		<view class="exclusive-one-two">
-			<text class="text1">专</text>
-			潍坊学院专属
+	</view>
+
+	<view class="exclusive">
+		<view class="exclusive-one">
+			<view class="exclusive-one-one">
+				<text>官</text>
+				官方授权
+			</view>
+			<view class="exclusive-one-two">
+				<text >专</text>
+				潍坊学院专属
+			</view>
 		</view>
 	</view>
 
-	<view>
-		<image>
-
-		</image>
+	<view class="z-banner">
+		<view>
+			<van-row>
+				<van-col span="8" wx:for="{{bannerInfo}}" wx:for-item="item" wx:for-index="index" wx:key="title">
+					<image src="{{item.imgUrl}}"></image>
+					<view>
+						<view>{{item.title}}</view>
+						<view>{{item.price}}</view>
+					</view>
+				</van-col>
+				<!-- <van-col span="8">888</van-col>
+				<van-col span="8">888</van-col> -->
+			</van-row>
+		</view>
 
 	</view>
-
-
 
 
 </view>

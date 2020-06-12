@@ -10,7 +10,7 @@
 .swiper>image{
   height:300rpx;
   width:100%;
-  border-radius: 10px;
+  border-radius: 10rpx;
 }
 
 .exclusive-one{
@@ -53,6 +53,17 @@
     align-items: center;
     vertical-align: top;
 }
+
+.z-banner{
+    height: 100px;
+    padding: 2% 4% 4% 4%;
+    background-color: white;
+}
+
+.van-col{
+  text-align: center;
+}
+
 
 /* .exclusive{
   padding:2px;
