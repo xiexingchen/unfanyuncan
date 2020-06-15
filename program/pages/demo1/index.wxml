@@ -28,23 +28,66 @@
 			</view>
 		</view>
 	</view>
-
 	<view class="z-banner">
-		<view>
-			<van-row>
-				<van-col span="8" wx:for="{{bannerInfo}}" wx:for-item="item" wx:for-index="index" wx:key="title">
-					<image src="{{item.imgUrl}}"></image>
-					<view>
-						<view>{{item.title}}</view>
-						<view>{{item.price}}</view>
-					</view>
-				</van-col>
-				<!-- <van-col span="8">888</van-col>
-				<van-col span="8">888</van-col> -->
-			</van-row>
-		</view>
+		<!-- <view class="z-block">
+			<view wx:for="{{bannerInfo}}" wx:for-item="item" wx:for-index="index" wx:key="title" class="{{index==0?'relative':'relative-1'}}">
+				<image src="{{item.imgUrl}}" mode="aspectFit"></image>
+				<view class="position" >
+					<view>{{item.title}}</view>
+					<view>{{item.price}}</view>
+				</view>
+			</view>
+			<!-- <view>
+				<image src="{{bannerInfo[1].imgUrl}}"></image>
+				<view>
+					<text></text>
+					<text></text>
+				</view>
+
+			</view> -->
+		<!-- <view>
+				<image src="{{bannerInfo[2].imgUrl}}"></image>
+				<view>
+					<text></text>
+					<text></text>
+				</view>
+
+			</view> 
+
+		</view> -->
+		<!-- <view>
+			<van-row gutter="8">
+                <van-col span="10" class="relative">
+                    <image src="{{bannerInfo[0].imgUrl}}" width="100%"/>
+                    <div class="position">
+                        <div class="title">超值套餐</div>
+                        <div class="pirce">9.9起</div>
+                    </div>
+                </van-col>
+                <van-col span="7" class="relative">
+                    <image src="{{bannerInfo[1].imgUrl}}" width="100%"/>
+                    <div class="position-img">
+                        <div class="title samll-font">热卖单品</div>
+                    </div>
+                </van-col>
+                <van-col span="7" class="relative">
+                    <image src="{{bannerInfo[2].imgUrl}}" width="100%"/>
+                    <view ></view> class="position-img">
+                        <div class="title samll-font">好评餐品</div>
+                    </div>
+                </van-col>
+            </van-row>
+		</view> -->
+		 <van-row gutter="8">
+			<van-col span="138" wx:for="{{bannerInfo}}" wx:for-item="item" wx:for-index="index" wx:key="title" class="relative">
+				<van-image class="pigimg" height="100" src="{{item.imgUrl}}" width="{{index==0?'138.42':'95.31'}}" />
+				
+				<view class="{{index==0?'position':'position-1'}}">
+					<view>{{item.title}}</view>
+					<view>{{item.price}}</view>
+				</view>
+			</van-col>
+		</van-row> 
 
 	</view>
-
-
 </view>

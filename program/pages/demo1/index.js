@@ -13,8 +13,8 @@ Page({
     duration: 500,
     bannerInfo:[
       {imgUrl:"https://test.rongdaufun.com/platform/Application/College/Public/img/banner-index1.png",title:"超值套餐",price:"9.9起"},
-      {imgUrl:"./img/banner-index2.png",title:"超值套餐",price:""},
-      {imgUrl:"./img/banner-index3.png",title:"超值套餐",price:""}
+      {imgUrl:"https://test.rongdaufun.com/platform/Application/College/Public/img/banner-index2.png",title:"热卖单品",price:""},
+      {imgUrl:"https://test.rongdaufun.com/platform/Application/College/Public/img/banner-index3.png",title:"好评餐品",price:""}
     ]
 
 
