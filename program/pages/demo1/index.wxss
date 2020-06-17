@@ -64,61 +64,48 @@
   padding: 2% 4% 4% 4%;
   background-color: white;
 }
-.relative{
- 
+.van-row{
+  text-align: center;
+}
+
+ .van-col{
   position: relative;
 }
-
-.position{
-   width:61.609px;
-   height:38px;
-   position: absolute;
-   top:8%;
-   left:82%;
-   font-size: 14.4px; 
-}
-.position-1{
+ .absolute{
+  font-size: 14.4px;
+  text-align: left;
   position: absolute;
   top:8%;
-  left:12%;
+  left:8%;
+  font-weight: bold;
+} 
+
+.title{
+ 
+  letter-spacing: 1px;
+ 
 }
-/* .z-block{
-  width:345px;
-  height:103px;
-  
+.title-0{
+  font-size:12px;
+  letter-spacing: 1px;
+}
+.price{
+  color: #E15B49;
 }
 
-.relative{
-  width:138.417px;
-  height:103px;
+.res-inner{
+  margin-top: 10px;
+  padding-top: 1%;
+  background-color: white;
+  margin-bottom: 18%;
 }
-.relative-1{
-  width:100.63px;
-  height:103px;
-}
-
-.z-banner>.z-block>image{
- width:100%;
- height:100%;
-} */
-/* .z-banner>.van-row{
-width:345px;
-height:103px;
-} */
-
-
-
-/* .position{
-  position: absolute;
-  top: 8%;
-  left: 8%;
-
-}
-.position-1{
-  position: absolute;
-  top: 8%;
-  left: 12%;
+/* 
+.van-cell{
+  width: 10px;
+  height: 10px;
 } */
 
-
-
+/* .van-cell{
+  width:100px;
+  height: 100px;
+} */

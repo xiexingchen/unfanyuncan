@@ -1,1 +1,24 @@
+<view>
+	<view class="my-header">
 
+		<view>
+			<view>
+				<text></text>
+				<text></text>
+			</view>
+
+			<view>
+				<view>
+					<image>
+
+					</image>
+
+				</view>
+			</view>
+		</view>
+
+	</view>
+
+
+
+</view>

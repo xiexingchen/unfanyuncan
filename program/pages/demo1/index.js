@@ -1,4 +1,6 @@
 // pages/demo1/index.js
+import Toast from 'path/to/@vant/weapp/dist/toast/toast';
+
 Page({
 
   /**
@@ -15,13 +17,30 @@ Page({
       {imgUrl:"https://test.rongdaufun.com/platform/Application/College/Public/img/banner-index1.png",title:"超值套餐",price:"9.9起"},
       {imgUrl:"https://test.rongdaufun.com/platform/Application/College/Public/img/banner-index2.png",title:"热卖单品",price:""},
       {imgUrl:"https://test.rongdaufun.com/platform/Application/College/Public/img/banner-index3.png",title:"好评餐品",price:""}
-    ]
-
-
-
+    ],
+    active: 0,
+    show: false,
+    columns: ['杭州', '宁波', '温州', '嘉兴', '湖州'],
 
   },
 
+  onChange(event) {
+    wx.showToast({
+      title: `切换到标签 ${event.detail.name}`,
+      icon: 'none',
+    });
+  },
+
+  showPopup() {
+    this.setData({ show: true });
+  },
+  onClose() {
+    this.setData({ show: false });
+  },
+  onChange(event) {
+    const { picker, value, index } = event.detail;
+    Toast(`当前值：${value}, 当前索引：${index}`);
+  },
   /**
    * 生命周期函数--监听页面加载
    */
